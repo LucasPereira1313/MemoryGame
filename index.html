@@ -1,0 +1,34 @@
+<!DOCTYPE html5>
+<html lang="pt-br">
+    <head>
+        <title>Memory</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="./css/page.css">
+        <script src="./script/game.js"></script>
+    </head>
+    <body>
+        <div class="main">
+            <div class="main-head">
+                <div>
+                    <button onclick="start();">Reset</button>
+                </div>      
+                <div>
+                    <span id="mesage"></span>
+                </div>                             
+            </div>
+            <div class="main-body">
+                <table class="memory" border="0">
+                    <tr>
+                        <th class="buttonA" data-val="A" data-num="0" onclick="pressButton(this);"></th>
+                        <th class="buttonB" data-val="B" data-num="1" onclick="pressButton(this);"></th>
+                      </tr>
+                      <tr>
+                        <td class="buttonC" data-val="C" data-num="2" onclick="pressButton(this);"></td>
+                        <td class="buttonD" data-val="D" data-num="3" onclick="pressButton(this);"></td>
+                      </tr>
+                </table>>
+                <div id="step" class="memory-pizza"></div>
+            </div>
+        </div>
+    </body>
+</html>
